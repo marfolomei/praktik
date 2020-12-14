@@ -47,6 +47,60 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
 
 
     }
+    public void checked(){
+        A.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    e[0] = false;
+                }
+            }
+        });
+        B.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    e[1] = false;
+                }
+            }
+        });
+        C.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    e[2] = true;
+                    Ball++;
+                    bank.setText(String.valueOf(Ball));
+                }
+            }
+        });
+        A1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    e[3] = false;
+
+                }
+            }
+        });
+        B1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    e[4] = false;
+                }
+            }
+        });
+        C1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    e[5] = true;
+
+                }
+            }
+        });
+    }
 
 
 
